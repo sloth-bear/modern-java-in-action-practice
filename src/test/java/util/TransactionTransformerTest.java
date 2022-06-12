@@ -16,9 +16,9 @@ public class TransactionTransformerTest {
 
   private static final String CAMBRIDGE = "Cambridge";
   private static final String MILAN = "Milan";
-  
+
   @Test
-  @DisplayName("2011년에 일어난 모든 트랜잭션을 찾아 값을 오름차순으로 정리하시오.")
+  @DisplayName("특정 년도에 일어난 모든 트랜잭션을 찾아 값을 오름차순으로 정리하시오.")
   public void shouldReturnAllTransactionThatIsSortedValueAsc() {
     // given
     var transactions = TransactionFactory.get();
@@ -50,7 +50,7 @@ public class TransactionTransformerTest {
   }
 
   @Test
-  @DisplayName("케임브리지에서 근무하는 모든 거래자를 찾아서 이름순으로 정렬하시오.")
+  @DisplayName("특정 도시에서 근무하는 모든 거래자를 찾아서 이름순으로 정렬하시오.")
   public void shouldReturnAllTradersThatIsNameOrderedInSpecificCity() {
     // given
     var transactions = TransactionFactory.get();
@@ -80,7 +80,7 @@ public class TransactionTransformerTest {
   }
 
   @Test
-  @DisplayName("밀라노에 거래자가 있는가?")
+  @DisplayName("특정 도시에 거래자가 있는지 여부를 반환한다.")
   public void shouldReturnBooleanWhetherExistsTradersInSpecificCity() {
     // given
     var transactions = TransactionFactory.get();
