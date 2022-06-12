@@ -18,6 +18,10 @@ import org.springframework.lang.NonNull;
  */
 public class TransactionTransformer {
 
+  private TransactionTransformer() {
+    throw new UnsupportedOperationException();
+  }
+
   public static List<Transaction> getSortedByValue(
       @NonNull final List<Transaction> transactions,
       @NonNull final Predicate<Transaction> filterFunction) {

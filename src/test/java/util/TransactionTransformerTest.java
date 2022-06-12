@@ -16,7 +16,7 @@ public class TransactionTransformerTest {
 
   private static final String CAMBRIDGE = "Cambridge";
   private static final String MILAN = "Milan";
-
+  
   @Test
   @DisplayName("2011년에 일어난 모든 트랜잭션을 찾아 값을 오름차순으로 정리하시오.")
   public void shouldReturnAllTransactionThatIsSortedValueAsc() {
